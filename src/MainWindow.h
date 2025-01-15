@@ -10,32 +10,28 @@
 #include <QAction>
 #include <QMessageBox>
 #include <QTimer>
-#include <QTextEdit>
 
 #include "MyScene.h"
-#include "Lancement.h"
-#include "Lancement.h"
 #include "Rejouer.h"
+#include "Lancement.h"
 
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
 private :
-    MyScene* mainScene;
-    //Lancement* lancementScene;
+    QGraphicsScene* mainScene;
     QGraphicsView* mainView;
-    Rejouer* lastScene;
     QMenu* regleMenu;
     QMenu* helpMenu;
     QTimer* timer1;
+    QString pseudo;
 
 public:
-    MainWindow(QWidget* parent = nullptr);
+    MainWindow(QString newPseudo = "pseudo", QWidget* parent = nullptr);
     virtual ~MainWindow();
 
 public slots:
-    void slot_aboutMenu();
     void slot_aboutRegle();
     void update();
 };
