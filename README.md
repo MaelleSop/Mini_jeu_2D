@@ -10,7 +10,9 @@ make
 
 Il faut aussi installer, dans tous les cas, la librairie multimedia sur la WSL pour avoir les audios :
 
+```
 sudo apt-get install qt6-multimedia
+```
 
 Les règles du jeu sont simples, vous incarnez un petit singe qui a faim. Votre but est donc de récupérer le plus de bananes possible tout en évitant les gorilles qui veulent vous les voler. 
 
