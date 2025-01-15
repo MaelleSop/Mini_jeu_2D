@@ -1,6 +1,13 @@
 # Bienvenue sur notre jeu Banana Feast réalisé en C++ et QT !
 
 Pour pouvoir lancer le jeu, il vous suffit de lancer le fichier main.cpp si vous passer par CLion ou un autre EDI. Sinon dans la WSL vous devez exécuter les commandes suivantes après s'être déplacé dans le fichier contenant le projet :
+Assurez-vous d'avoir QT d'installer sinon installez le.
+```
+sudo apt install qt6-base-dev
+sudo apt install qt6-multimedia-dev
+sudo apt install qt6-wayland
+
+```
 
 ```
 cmake .
